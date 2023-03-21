@@ -1,19 +1,16 @@
 import { useState } from "react";
-import PricinComponent from "./components/Pricing";
 import { Box, Image, Input, Button } from "@nature-ui/core";
+import PricinComponent from "./components/Pricing";
 
 function App() {
   return (
-    <Box className="max-w-[1440px] w-full bg-[#FBF9FF]" centered>
+    <Box className="max-w-screen-2xl w-full bg-primary" centered>
       <Box className="px-4 overflow-x-hidden">
         <PricinComponent />
       </Box>
-      <Box className="bg-dark h-[232px] lg:h-[442px] w-full">
-        <Image src="/background.png" className="" />
-        <Box
-          centered
-          className="max-w-[396px] mt-11 flex flex-row px-4 lg:px-0"
-        >
+      <Box className="bg-dark h-xl lg:h-2xl w-full">
+        <Image src="/background.png" className="w-full" />
+        <Box centered className="max-w-md mt-11 flex flex-row px-4 lg:px-0">
           <Input
             className="border bg-transparent rounded-lg text-white"
             placeholder="success@example.com"
